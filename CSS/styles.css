@@ -17,11 +17,13 @@ body {
 }
 
 img {
-    max-width: auto;
+    max-width: 100%;
     display: block;
 }
 
-
+.round {
+  border-radius:15px;
+}
 
 /*Style rules for mobile viewport*/
 
@@ -40,12 +42,6 @@ img {
   padding:2%;
   text-align:center;
   font-family:'Delius';
-}
-
-.mobile h3{
-  padding:2%;
-  text-align:center;
-  font-family:'Lora';
 }
 
 .main {
@@ -67,7 +63,6 @@ nav li {
     font-size: 1.5em;
     font-family: 'Delius', Arial, sans-serif;
     font-weight: bold;
-    border-top: 0.5px solid #f6eee4;
 }
 
 nav li a {
@@ -83,15 +78,6 @@ main {
     padding: 2%;
     font-family: "Funnel Display", sans-serif;
 }
-
-main p {
-    font-size: 1.25em;
-}
-
-main ul {
-    list-style-type:circle;
-}
-
 
 
 /*Media Query for Tablet Viewport*/
@@ -124,7 +110,7 @@ main ul {
 
 /*Desktop Viewport: Style rules for nav area*/
   nav li {
-    font-size:1.5em;
+    font-size:1.0em;
   }
 
   nav li a {
