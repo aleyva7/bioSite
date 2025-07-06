@@ -17,6 +17,152 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: auto;
     display: block;
+}
+
+
+
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+
+.mobile{
+  display:block;
+}
+
+.tab-desk {
+  display:none;
+}
+/*Style rules for header area*/
+
+.mobile h1 {
+  padding:2%;
+  text-align:center;
+  font-family:'Delius';
+}
+
+.mobile h3{
+  padding:2%;
+  text-align:center;
+  font-family:'Lora';
+}
+
+.main {
+  font-family:'Funnel Display';
+}
+
+/*Style rules for navigation area*/
+nav {
+    background-color:#302f2e;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display:inline-block;
+    font-size: 1.5em;
+    font-family: 'Delius', Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #f6eee4;
+}
+
+nav li a {
+    display: block;
+    color: #57fac994;
+    text-align: center;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/*Style rules for main content*/
+main {
+    padding: 2%;
+    font-family: "Funnel Display", sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+    list-style-type:circle;
+}
+
+
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width:620px), print {
+
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+  .tab-desk {
+    display:block;
+  }
+
+  .mobile {
+    display:none;
+  }
+
+/*Tablet Viewport: Style rules for nav area*/
+  nav li{
+    border-top:none;
+    display:inline-block;
+    font-size:1.25em;
+  }
+
+  nav li a{
+    padding:0.5em;
+  }
+
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width:1000px), print{
+
+/*Desktop Viewport: Style rules for nav area*/
+  nav li {
+    font-size:1.5em;
+  }
+
+  nav li a {
+    padding:0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color:#2a1f14;
+    background-color:#f6eee4;
+  }
+
+}
+
+/*Desktop Viewport:Style rules for main content*/
+#info ul {
+  margin-left:5%;
+}
+
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width:1921px), print {
+  body {
+    background:linear-gradient(#F6eee4, #78593a);
+  }
+
+  #wrapper {
+    width:19220px;
+    margin:0 auto;
+  }
+
+  main {
+    background-color:#f6eee4;
+  }
+}
+
+/*Media Query for Print*/
+@media print {
+  body {
+    background-color:#fff;
+    color:#000;
+  }
 }
