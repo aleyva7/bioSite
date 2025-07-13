@@ -25,10 +25,10 @@ img {
   border-radius:15px;
 }
 
-  .column {
-    width:46%;
-    float:left;
-    margin: 0 2%;
+  .grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
   }
 
   h1 {
