@@ -133,6 +133,18 @@ main {
     background-color:#f6eee4;
   }
 
+  td {
+    border: 1px solid black;
+  }
+
+  tr {
+    background-color: white;
+  }
+ 
+  tr:nth-child(odd) {
+    background-color:gray;
+  }
+
 }
 
 /*Desktop Viewport:Style rules for main content*/
