@@ -19,7 +19,7 @@ body {
 img {
     max-width: 100%;
     display: block;
-    position:center;
+    position:relative;
 }
 
 .round {
@@ -37,6 +37,13 @@ img {
 
   }
 
+  /*PSEUDO STYLE FOR VISITED LINK*/
+  .link {
+    color: white;
+  }
+
+
+  
 /*Style rules for mobile viewport*/
 
 /*Style rules to show mobile class and hide tab-desk class*/
